@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+#global{
+    background-color: lightblue;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#grille {
+    background-color: bisque;
+    width: 30vw;
+    height: 30vw;
+}
+
+.ligne {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.slot {
+    height: 100%;
+}
