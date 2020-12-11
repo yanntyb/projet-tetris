@@ -66,12 +66,21 @@ function effacer(block,grille){
 }
 
 function moveDownBlock(block, grille){
-    window.setInterval(function(){
-        effacer(block,grille)
-        displayBlock(block, grille)
-        block[block.length - 2][0] ++;
-        console.log(block)
-    },300)
+    if(block[block.length - 1] === "actif"){
+        let time = window.setInterval(function(){
+            effacer(block,grille)
+            displayBlock(block, grille)
+            block[block.length - 2][0] ++;
+            console.log(block)
+            let lengrille = grille.getElementsByClassName("ligne").length
+            if(block[block.length - 1][0] === lengrille - 2){
+                block[block.length - 1] = "none";
+            }
+        },300)
+    }else{
+        clearInterval(time)
+    }
+
 }
 
 grille = initGrille(grille, 20);
