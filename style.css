@@ -22,6 +22,7 @@ html{
     background-color: bisque;
     width: 30vw;
     height: 30vw;
+    border: 3px solid gold;
 }
 
 .ligne {
@@ -32,4 +33,10 @@ html{
 
 .slot {
     height: 100%;
+}
+
+#rules {
+    position: absolute;
+    left: 15%;
+    font-size: 3rem;
 }
